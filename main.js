@@ -24,3 +24,7 @@ var redSquare = document.createElement('div');
 box.appendChild(redSquare);
 	// for testing transition when hover
 redSquare.classList.add('red');		
+	//another div in box
+var blueSquare = document.createElement('div');
+box.appendChild(blueSquare);
+blueSquare.classList.add('blue');	
