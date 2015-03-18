@@ -18,6 +18,8 @@
 	margin: auto;
 	padding: 40px;
 	float: left;
+	display: block;
+	margin-top: 30px;
 }
 .titleBox {
 	font-size: 60px;
@@ -37,7 +39,7 @@
 	width: 100px;
 	height: 100px;
 	border-radius: 5px;
-	transition: background-color 2s;
+	transition: background-color 1s;
 }
 .red:hover {
 	background-color: yellow;
@@ -52,4 +54,31 @@
 }
 .blue:hover {
 	transform: rotateZ(360deg) scale(2);
+}
+.menu {
+	height: 50px;
+	margin: auto;
+	background-color: grey;
+	margin-bottom: 20px;
+	text-align: center;
+}
+ul {
+    margin:0 auto;
+    padding:0;
+    list-style-type:none;
+    display: inline-block;
+    border-collapse: collapse;
+}
+ul > li {
+	margin: 2px;
+	display: inline-block;
+	padding: 0px;
+	float: left;
+	border: solid black 1px;
+	border-collapse: collapse;
+}
+ul > li > a {
+	display: block;
+	border-bottom: solid black 1px;
+	/*border-collapse: collapse;*/
 }
