@@ -74,19 +74,20 @@ ol {
 ol > li {
 	margin: 2px;
 	/*display: inline-block;*/
-	/*padding: 0px;*/
+	/*padding: 2px;*/
 	float: left;
 	/*border: solid black 1px;*/
 	/*border-collapse: collapse;*/
 	width: 100px;
 	/*height: 100%;*/
+	position: relative;
 }
 ol > li > a {
 	display: block;
 	text-decoration: none;
 	border: solid black 1px;
 	padding: 5px;
-	margin: 2px;
+	/*margin: 2px;*/
 	height: 30px;
 	text-align: center;
 	background-image:linear-gradient(#FFF 0%, #EEE 30%, #DDD 70%, #FFF 100%);
@@ -110,23 +111,33 @@ ol > li:first-child + li + li {
 	text-align: center;
 }
 ol > li >  ul {
-	display:none;
+	/*display:none;*/
+	width: 100%;
+	visibility: hidden;
+	transform: scaleY(0);
+	transform-origin: 50% 0;
+	transition: 0.5s;
+	position: absolute;
 	margin: 0;
-	padding:5px;
+	padding:0;
 }
 ol > li:hover > ul {
-	display:block;
+	/*display:block;*/
+	visibility: visible;
+	transform: scaleY(1);
 }
 ol > li > ul >li {
 	background-color: white;
 	border-bottom: solid black 2px;
+	border: solid black 1px;
 	text-decoration: none;
 	list-style-type: none;
 	height: 30px;
-		background-image:linear-gradient(#FFF 0%, #EEE 30%, #DDD 70%, #FFF 100%);
+	background-image:linear-gradient(#FFF 0%, #EEE 30%, #DDD 70%, #FFF 100%);
 	/*width:100px;*/
 }
 ol > li > ul > li  > a {
+	display: block;
 	text-decoration: none;
 	padding: 5px;
 }
