@@ -2,12 +2,16 @@
 var menu = document.createElement('nav');
 menu.classList.add('menu');
 document.body.appendChild(menu);
- 	// creat list of categories to menu
+ 	// create list of categories to menu
+ 	// list is ol - main list
  var list =  document.createElement('ol');
  menu.appendChild(list);
+ 	// listItem are children of ol, they are li 
  var listItem = [];
+ 	// listItem[0] is first li in main ol
  listItem[0] = document.createElement('li');
  list.appendChild(listItem[0]);
+ 	// link1 is a child of first listItem is a 'link' which is visible in listItem[0]
  var link1 = document.createElement('a');
  listItem[0].appendChild(link1);
  link1.href = '#'
@@ -28,17 +32,21 @@ document.body.appendChild(menu);
  link3.innerHTML = 'category 3';
  	//creating links for categories
  var cat1Links = [];
+ 	// cat1list is children of li from main list. is new list inside li of main list
  var cat1list = document.createElement('ul');
- listItem[0].appendChild(cat1list);	
+ listItem[0].appendChild(cat1list);
+ 	// for creating cat1Links which are li, children of ul list named cat1list	
  for (i = 0; i < 6; i++){
  	cat1Links[i] = document.createElement('li');
  	cat1list.appendChild(cat1Links[i]);
  	cat1Links[i].classList.add('links');
+ 		// creating link for every li inside ul list 
  		var link = document.createElement('a');
  		cat1Links[i].appendChild(link);
  		link.innerHTML = 'link ' + i;
  		link.href = '#';
  }
+ 	// creating elements for second li in main list ( category 2)
  var cat2Links = [];
  var  cat2list = document.createElement('ul');
  listItem[1].appendChild(cat2list);	
