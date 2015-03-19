@@ -18,10 +18,12 @@
 	margin: auto;
 	padding: 40px;
 	float: left;
+	display: block;
+	margin-top: 30px;
 }
 .titleBox {
 	font-size: 60px;
-	margin-left: 30px;
+	margin-left: 150px;
 	display: inline-block;
 	float: left;
 }
@@ -34,13 +36,14 @@
 }
 .red {
 	background-color: red;
-	width: 100px;
+	width: 400px;
 	height: 100px;
 	border-radius: 5px;
-	transition: background-color 2s;
+	transition: background-color 1s, width 1s;
 }
 .red:hover {
 	background-color: yellow;
+	width: 300px;
 }
 .blue {
 	background-color: blue;
@@ -53,3 +56,92 @@
 .blue:hover {
 	transform: rotateZ(360deg) scale(2);
 }
+.menu {
+	height: 50px;
+	margin: auto;
+	background-color: grey;
+	margin-bottom: 20px;
+	text-align: center;
+}
+ol {
+    margin:0 auto;
+    padding:0;
+    list-style-type:none;
+    display: inline-block;
+    /*border-collapse: collapse;*/
+    /*border: solid black 1px;*/
+}
+ol > li {
+	margin: 2px;
+	/*display: inline-block;*/
+	/*padding: 2px;*/
+	float: left;
+	/*border: solid black 1px;*/
+	/*border-collapse: collapse;*/
+	width: 100px;
+	/*height: 100%;*/
+	position: relative;
+}
+ol > li > a {
+	display: block;
+	text-decoration: none;
+	border: solid black 1px;
+	padding: 5px;
+	/*margin: 2px;*/
+	height: 30px;
+	text-align: center;
+	background-image:linear-gradient(#FFF 0%, #EEE 30%, #DDD 70%, #FFF 100%);
+	/*border-collapse: collapse;*/
+}
+ol > li:hover > a {
+	color: red;
+	background-color: white;
+	background-image: none;
+}
+/*ol > li:first-child {
+	background-color: red;
+}
+ol > li:first-child + li {
+	background-color: green;
+}
+ol > li:first-child + li + li {
+	background-color: blue;
+}*/
+.links {
+	text-align: center;
+}
+ol > li >  ul {
+	/*display:none;*/
+	width: 100%;
+	visibility: hidden;
+	transform: scaleY(0);
+	transform-origin: 50% 0;
+	transition: 0.5s;
+	position: absolute;
+	margin: 0;
+	padding:0;
+}
+ol > li:hover > ul {
+	/*display:block;*/
+	visibility: visible;
+	transform: scaleY(1);
+}
+ol > li > ul >li {
+	background-color: white;
+	border-bottom: solid black 2px;
+	border: solid black 1px;
+	text-decoration: none;
+	list-style-type: none;
+	height: 30px;
+	background-image:linear-gradient(#FFF 0%, #EEE 30%, #DDD 70%, #FFF 100%);
+	/*width:100px;*/
+}
+ol > li > ul > li  > a {
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+}
+ol > li > ul > li:hover{
+	background-color: white;
+	background-image: none;
+};
