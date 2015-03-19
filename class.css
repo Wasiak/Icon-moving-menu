@@ -87,7 +87,7 @@ ol > li > a {
 	text-decoration: none;
 	border: solid black 1px;
 	padding: 5px;
-	margin: 2px;
+	/*margin: 2px;*/
 	height: 30px;
 	text-align: center;
 	background-image:linear-gradient(#FFF 0%, #EEE 30%, #DDD 70%, #FFF 100%);
@@ -129,6 +129,7 @@ ol > li:hover > ul {
 ol > li > ul >li {
 	background-color: white;
 	border-bottom: solid black 2px;
+	border: solid black 1px;
 	text-decoration: none;
 	list-style-type: none;
 	height: 30px;
