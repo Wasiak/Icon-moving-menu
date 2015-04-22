@@ -1,6 +1,7 @@
 	//create navigation part ofsite
 var menu = document.createElement('nav');
 menu.classList.add('menu');
+menu.classList.add('navbar-fixed-top');
 document.body.appendChild(menu);
  	// create list of categories to menu
  	// list is ol - main list
@@ -103,4 +104,8 @@ redSquare.classList.add('red');
 	//another div in box
 var blueSquare = document.createElement('div');
 box.appendChild(blueSquare);
-blueSquare.classList.add('blue');	
+blueSquare.classList.add('blue');
+
+var text = document.createElement('div');
+document.body.appendChild(text);
+text.innerHTML = 'dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>'	
