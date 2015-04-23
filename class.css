@@ -162,6 +162,7 @@ ol > li > ul > li:hover{
 	min-height: 100px;
 	width: 1200px;
 	margin-top: 20px;
+	padding-bottom: 15px;
 }
 .columns {
 	border: solid black 1px;
