@@ -59,6 +59,12 @@ body {
 .blue:hover {
 	transform: rotateZ(360deg) scale(2);
 }
+.make-big {
+	transition: transform 1s, scale 1s;
+}
+.make-big:hover {
+	transform: scale(2);
+}
 .menu {
 	height: 50px;
 	margin: auto;
