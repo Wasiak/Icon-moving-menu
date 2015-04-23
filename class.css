@@ -147,4 +147,24 @@ ol > li > ul > li  > a {
 ol > li > ul > li:hover{
 	background-color: white;
 	background-image: none;
-};
+}
+.main {
+	margin: auto;
+	margin-left: -150px !important;
+	width: 1200px;
+	display: inline-block;
+	min-height: 100px;
+	background-color: lightblue;
+	margin-top: 20px;
+}
+#cos {
+	background-color: lightgrey;
+	min-height: 100px;
+	width: 1200px;
+	margin-top: 20px;
+}
+.columns {
+	border: solid black 1px;
+	text-align: center;
+}
+;

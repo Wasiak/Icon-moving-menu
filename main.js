@@ -108,4 +108,9 @@ blueSquare.classList.add('blue');
 
 var text = document.createElement('div');
 document.body.appendChild(text);
-text.innerHTML = 'dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>dupa<br>'	
+text.innerHTML = 'dupa<br>dupa<br>dupa<br>dupa<br>'
+
+var container = document.createElement('div');
+document.body.appendChild(container);
+container.classList.add('main');
+container.classList.add('container');
