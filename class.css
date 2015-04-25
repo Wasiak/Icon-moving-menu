@@ -174,4 +174,7 @@ ol > li > ul > li:hover{
 	border: solid black 1px;
 	text-align: center;
 }
+.just-margin {
+	margin-top: 10px;
+}
 ;
