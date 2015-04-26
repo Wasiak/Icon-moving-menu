@@ -9,6 +9,7 @@
 			<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 			<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+			<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body><!-- 
 		<div id='menu'>
@@ -59,6 +60,46 @@
 			<i class = 'fa fa-cog fa-spin'></i>
 			<a class = 'btn btn-danger just-margin' href = '#'>
 				<i class = 'fa fa-trash-o fa-lg'></i> USUŃ ! </a>
-		</div>
+
+			<div id = 'slider1' class = 'carousel slide just-margin'>
+				<ol class = 'carousel-indicators'>
+					<li data-target = '#slider1' data-slide-to = '0' class = 'active'></li>
+					<li data-target = '#slider1' data-slide-to = '1'></li>
+					<li data-target = '#slider1' data-slide-to = '2'></li>
+				</ol>	
+				<div class = 'carousel-inner'>
+					<div class = 'item active'>
+						<img src = 'images/0.jpg' alt = ''>
+						<div class = 'carousel-caption'>
+							<h3>Zdjęcie numer 1</h3>
+							<p>Fajne zdjecie</p>
+						</div>	
+					</div>
+					<div class = 'item'>
+						<img src = 'images/1.jpg' alt = ''>
+						<div class = 'carousel-caption'>
+							<h3>Zdjęcie numer 2</h3>
+							<p>Tez spoko zdjecie</p>
+						</div>	
+					</div>
+					<div class = 'item'>
+						<img src = 'images/2.jpg' alt = ''>
+						<div class = 'carousel-caption'>
+							<h3>Zdjęcie numer 3</h3>
+							<p>to tez gitarka zdjecie</p>
+						</div>	
+					</div>	
+				</div>
+				<a class = 'left carousel-control' href = '#slider1' data-slide = 'prev'>
+					<span class = 'icon-prev'></span>
+				</a>
+				<a class = 'right carousel-control' href = '#slider1' data-slide = 'next'>
+					<span class = 'icon-next'></span>
+				</a>			
+			</div>
+
+		</div> <!--koniec glownego containera -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 	</body>
 </html>
