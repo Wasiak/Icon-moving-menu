@@ -177,4 +177,7 @@ ol > li > ul > li:hover{
 .just-margin {
 	margin-top: 10px;
 }
+.carousel-indicators li {
+	float: none;
+}
 ;
