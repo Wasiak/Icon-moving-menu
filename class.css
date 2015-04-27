@@ -180,4 +180,8 @@ ol > li > ul > li:hover{
 .carousel-indicators li {
 	float: none;
 }
+#first-canvas {
+	border:  solid black 1px;
+	margin-left: calc(50% - 250px);
+}
 ;

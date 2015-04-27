@@ -114,3 +114,9 @@ var container = document.createElement('div');
 document.body.appendChild(container);
 container.classList.add('main');
 container.classList.add('container');
+
+var canvas = document.getElementById('first-canvas');
+var ctx = canvas.getContext('2d');
+ctx.fillStyle = 'rgb(200, 0, 0)';
+ctx.fillRect(50, 50, 100, 100);
+
