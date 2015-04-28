@@ -123,7 +123,7 @@ ctx.fillRect(50, 50, 100, 100);
 ctx.beginPath();
 ctx.moveTo(200, 50);
 ctx.lineTo(200, 150);
-ctx.lineTo(300, 150);
+ctx.lineTo(400, 150);
 ctx.closePath();
 ctx.stroke();
 
