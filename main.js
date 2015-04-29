@@ -127,3 +127,13 @@ ctx.lineTo(400, 150);
 ctx.closePath();
 ctx.stroke();
 
+ctx.save(); //saving curent state 
+ctx.beginPath();
+ctx.moveTo(200, 150);
+ctx.translate(200, 150);	// move begining of coordinates system form (0,0) to (200,15)
+ctx.rotate((Math.PI/180)*30); // rotate new 'moved' canvas clockwise 30 deg
+ctx.lineTo(0, -89.44);
+ctx.closePath();
+ctx.stroke();
+ctx.restore(); // again previous state (with non-translate and non-rotate coordinates) start at (0,0) 
+

@@ -182,6 +182,6 @@ ol > li > ul > li:hover{
 }
 #first-canvas {
 	border:  solid black 1px;
-	margin-left: calc(50% - 250px);
+	/*margin-left: calc(50% - 250px);*/
 }
 ;
