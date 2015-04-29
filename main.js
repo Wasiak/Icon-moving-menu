@@ -137,3 +137,18 @@ ctx.closePath();
 ctx.stroke();
 ctx.restore(); // again previous state (with non-translate and non-rotate coordinates) start at (0,0) 
 
+ctx.strokeStyle = 'rgb(0, 200, 0)';
+ctx.beginPath();
+ctx.moveTo(50, 200);
+ctx.lineTo(200, 200);
+ctx.lineTo(200, 220);
+// ctx.closePath();
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(300, 200, 25,(Math.PI*0.8),(Math.PI*2));
+ctx.arc(350, 200, 25, (Math.PI),(Math.PI*2.2));
+ctx.lineTo(325, 290);
+ctx.closePath();
+ctx.fill();
+
